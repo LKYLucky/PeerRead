@@ -300,7 +300,7 @@ def main(args):
     x_dev = np.concatenate(x_dev,axis=1)
     x_test = np.concatenate(x_test,axis=1)
   else:
-    #print('Wrong'; sys.exit(1))
+    print('Wrong')#print('Wrong'; sys.exit(1))
   max_len = x_train.shape[1]
 
   print('x_train: {}, x_dev: {}, x_test: {}'.format(len(x_train), len(x_dev), len(x_test)))
