@@ -76,7 +76,7 @@ def prepare_data(
     aspects = ['RECOMMENDATION', 'SUBSTANCE', 'APPROPRIATENESS','MEANINGFUL_COMPARISON','SOUNDNESS_CORRECTNESS','ORIGINALITY','CLARITY','IMPACT', 'REVIEWER_CONFIDENCE' ]
     review_dir_postfix = ''
   else:
-    print('wrong dataset:',data_dir)
+    %print('wrong dataset:',data_dir)
     sys.exit(1)
 
 
