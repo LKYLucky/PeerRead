@@ -8,7 +8,7 @@ from itertools import dropwhile
 from nltk import word_tokenize
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
-import cPickle as pkl
+import pickle as pkl
 import numpy as np
 import pandas as pd
 import tensorflow as tf
@@ -319,7 +319,7 @@ def main(args):
 
 
   #load embedding or None
-  embedding_mat = load_embeddings(vocab, load="/data/word2vec/glove.840B.300d.w2v.bin") #None
+  embedding_mat = None # load_embeddings(vocab, load="/data/word2vec/glove.840B.300d.w2v.txt") 
 
   # loading a model
   model = model(config, embedding = embedding_mat)

@@ -39,7 +39,7 @@ def pad_sentence(token_list, pad_length, pad_id, reverse=False):
 
 def load_embeddings(vocab, load=False):
 
-  glove_embedding = gensim.models.KeyedVectors.load_word2vec_format(load, binary=True)
+  glove_embedding = gensim.models.KeyedVectors.load_word2vec_format(load, binary=False)
   embedding_size = len(glove_embedding['the'])
 
   embedding_var = np.random.normal(0.0, 0.01,[len(vocab), embedding_size] )
