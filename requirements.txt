@@ -1,5 +1,5 @@
-tensorflow==1.2
-gensim==2.3
+tensorflow==1.13.1
+gensim==3.4.0
 scikit-learn[alldeps]
 nltk
 spacy
