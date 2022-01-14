@@ -319,7 +319,7 @@ def main(args):
 
 
   #load embedding or None
-  embedding_mat = None # load_embeddings(vocab, load="/data/word2vec/glove.840B.300d.w2v.txt") 
+  embedding_mat = load_embeddings(vocab, load="/data/word2vec/glove.840B.300d.w2v.txt") #None
 
   # loading a model
   model = model(config, embedding = embedding_mat)
